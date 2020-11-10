@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+  font-family: Gotham-Bold;
+  src: url('assets/fonts/Gotham-Font/GothamBold.ttf');
+}
+@font-face{
+  font-family: Gotham-Book;
+  src: url('assets/fonts/Gotham-Font/GothamBook.ttf');
+}
+@font-face{
+  font-family: Gotham-Medium;
+  src: url('assets/fonts/Gotham-Font/GothamMedium.ttf');
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+.gotham-bold-text-css{
+  font-family: Gotham-Bold;
+  font-size: 11px;
+  line-height: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.gotham-medium-text-css{
+  font-family: Gotham-Medium;
+  font-size: 9px;
+  line-height: 9px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.gotham-medium-big-text-css{
+  font-family: Gotham-Medium;
+  font-size: 16px;
+  line-height: 18px;
+  color: #404041;
+
+}
+.gotham-book-text-css{
+  font-family: Gotham-Book;
+  font-size:24px;
+  line-height:26px;
+  color: #ffffff;
+}
+.gotham-book-text-small-css{
+  font-family: Gotham-Book;
+  font-size:16px;
+  line-height:18px;
+
+}
+.black-33{
+ color: #333333;
+}
+.black-26{
+  color: #262626;
+}
+.block{
+  display: block;
+}
+.no-border{
+  border-radius: 0px
+}
+.pl-10{
+  padding-left: 1em;
+}
+.pr-10{
+  padding-right: 1em;
+}
+.margin-tb{
+  margin: 2rem 0;
+}
+.home-content{
+  color: #FFFFFF;
+  border:1px solid #ffffff;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.btn-css-orange{
+  background-color: #EA7926;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #EA7926;
+  font-family: Gotham-Book;
+  padding: 15px 80px;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+hr.underline {
+ border-top: 1px solid rgba(211,211,211, 0.5);
+}
+.gotham-bold-text-small-css{
+  font-family: Gotham-Bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.trans-btn{
+  background-color: transparent;color: #EA7926;
+  padding: 5px 45px;
+}
+.margin-20{
+  margin:0rem 0rem 2rem 1rem;
+}
+.mb-10{
+  margin-bottom: 1rem;
+}

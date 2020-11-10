@@ -1,0 +1,102 @@
+<nav class=" navbar navbar-expand-lg navbar-absolute padding-80">
+  <div class=" container-fluid">
+    <div class=" navbar-wrapper">
+      <div class=" navbar-toggle d-inline">
+        <button class=" navbar-toggler" type="button" (click)="sidebarToggle()">
+          <span class=" navbar-toggler-bar bar1"> </span>
+          <span class=" navbar-toggler-bar bar2"> </span>
+          <span class=" navbar-toggler-bar bar3"> </span>
+        </button>
+      </div>
+      <a class=" navbar-brand" href="javascript:void(0)">
+        <img
+        src="assets/img/svg/logo.svg"
+        alt="Tata Communications" class="no-border"
+       />
+      </a>
+    </div>
+    <button
+      aria-label="Toggle navigation"
+      class=" navbar-toggler"
+      (click)="collapse()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+      id="navigation"
+      type="button"
+    >
+      <span class=" navbar-toggler-bar navbar-kebab"> </span>
+      <span class=" navbar-toggler-bar navbar-kebab"> </span>
+      <span class=" navbar-toggler-bar navbar-kebab"> </span>
+    </button>
+    <div class=" navbar-collapse" [ngbCollapse]="isCollapsed" id="navigation">
+      <ul class=" navbar-nav ml-auto ">
+
+        <li class=" nav-item flex-item-center" >
+
+          <a  class=" nav-link"  href="javascript:void(0)" style="margin-top: 1rem;">
+            <span class="gotham-bold-text-css pr-10">Login</span>
+            <div class=" photo"  [ngbPopover]="popContent" [popoverTitle]="popTitle">
+               <img src="assets/img/svg/user-circle.svg" alt="My Cart" class="user-logo no-border">
+            </div>
+
+
+
+          </a>
+
+        </li>
+        <li class=" nav-item flex-item-center" >
+          <a  class=" nav-link"  href="javascript:void(0)">
+
+            <div class=" ">
+              <img src="assets/img/svg/tata-logo.svg" alt="Tata logo" class="tatalogo no-border">
+            </div>
+
+          </a>
+        </li>
+        <li class=" separator d-lg-none"></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div style="margin-top: 30px;">
+  <ng-template #popContent>
+    <p class="gotham-medium-big-text-css margin-20"> Login to your account</p>
+    <form >
+      <div class="form-group">
+          <label class="gotham-book-text-small-css black-26 mb-10">Email ID</label>
+          <input type="text" formControlName="email" class="form-control input-box-css mb-10"  />
+      </div>
+      <div class="form-group">
+          <label  class="gotham-book-text-small-css black-26 mb-10">Password</label>
+          <input type="password" formControlName="password" class="form-control input-box-css mb-10" />
+      </div>
+
+    <div class="login-footer  mb-4" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+           <button class="btn-css-orange mb-4 mb-md-0" type="submit">Login</button>
+          </div>
+          <div class="col-md-6">
+           <button class="btn-css-orange  trans-btn" >
+             Forgot Password?</button>
+         </div>
+        </div>
+      </div>
+   </div>
+  </form>
+
+  </ng-template>
+  <ng-template #popTitle class="popover-header-blue" style="  background-color:#3D86C6;">
+    <span class="gotham-bold-text-small-css">Hello!</span>
+<!--
+    <div class="">
+      <p class="gotham-bold-text-small-css" style="color: black;">Hello!</p>
+
+    </div> -->
+  </ng-template>
+
+</div>
+
